@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VentoWebhookSender</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>VentoWebhookSender</h1>
+        <label for="webhookUrl">URL del Webhook <span class="required">*</span></label>
+        <input type="text" id="webhookUrl" placeholder="URL del Webhook" required>
+        
+        <label for="message">Mensaje <span class="required">*</span></label>
+        <textarea id="message" placeholder="Escribe tu mensaje aquí..." required></textarea>
+        
+        <center><h2>Opciones de Embed</h2></center>
+        <label for="embedTitle">Título del Embed</label>
+        <input type="text" id="embedTitle" placeholder="Título del Embed">
+        
+        <label for="embedDescription">Descripción del Embed</label>
+        <input type="text" id="embedDescription" placeholder="Descripción del Embed">
+        
+        <label for="embedColor">Color del Embed (hex)</label>
+        <input type="text" id="embedColor" placeholder="Color del Embed (hex)">
+        
+        <button id="sendButton">Enviar Mensaje</button>
+        <div id="response" class="response"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
